@@ -1,0 +1,71 @@
+:root {
+  --text: #e6f1f9;
+  --background: #03080d;
+  --primary: #95c2e7;
+  --secondary: #5c2090;
+  --accent: #b32fd0;
+  font-family: "comic sans ms";
+  background-color: var(--background);
+  color: var(--text);
+}
+
+input {
+  border-radius: 16px;
+  padding: 8px 16px;
+  border: none;
+}
+
+.start-button {
+  border: none;
+  padding: 1rem 2rem;
+  padding: 8px 16px;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 16px;
+  background-color: var(--accent);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.player {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin: 8px;
+}
+
+.board {
+  display: grid;
+  height: 500px;
+  width: 500px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  border-radius: 8px;
+  gap: 2px;
+  padding: 2px;
+}
+
+.cell:hover {
+  background-color: var(--accent);
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2rem;
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  background: var(--primary);
+  cursor: pointer;
+}

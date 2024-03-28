@@ -7,7 +7,21 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="container"></div>
+    <div class="container">
+      <h1>tic-tac-toe</h1>
+      <div class="player">
+        <label for="player1">Player 1:</label>
+        <input type="text" id="player1" placeholder="Enter name" />
+      </div>
+      <div class="player">
+        <label for="player2">Player 2:</label>
+        <input type="text" id="player2" placeholder="Enter name" />
+      </div>
+      <button id="start-game" class="start-button">Start Game</button>
+      <div id="game-results" style="display: none"></div>
+      <h2 class="turn"></h2>
+      <div class="board"></div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
